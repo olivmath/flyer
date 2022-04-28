@@ -3,7 +3,7 @@ name = "flyer"
 version = "0.1.0"
 description = ""
 authors = [
-    "Lucas Oliveira <lucas.oliveira@lunes.io>"
+    "Lucas Oliveira <olivmath@protonmail.com>"
 ]
 
 [tool.poetry.dependencies]
