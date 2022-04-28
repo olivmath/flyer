@@ -1,21 +1,25 @@
+"""
+# Flyer Molude
+"""
+
 from fastapi import FastAPI
 
 
-description ="""
+DESCRIPTION ="""
 ## Welcome To Flyer
 - ...
 
-[terms of use](https://github.com/olivmath/flyer)
+[terms of use](https://raw.githubusercontent.com/olivmath/flyer/main/LICENSE)
 
 ***by olivmath®***
 """
 
 
 app = FastAPI(
-    docs_url="/docs",
+    docs_url="/",
     openapi_url="/api/v1/openapi.json",
-    description=description,
-    title="Pix API",
+    description=DESCRIPTION,
+    title="GamEducation API",
     version="0.1.0",
     openapi_tags=[]
 )

@@ -8,9 +8,15 @@ from pytest import fixture, mark
 @fixture
 def hello() -> Response:
     client = TestClient(app)
-    return client.get("/")
+    return client.post("/teacher/upd", json={
+        "name": "Lucas Oliveira",
+        "subject": "Matemática"
+    })
 
 
-def test_hello_route(hello: Response):
+def test_add_teacher(hello: Response):
+    assert hello.json() == {
+        "name": "Lucas Oliveira",
+        "subject": "Matemática"
+    }
     assert hello.status_code == status.HTTP_200_OK
-    assert hello.json() == {"message": "Hello World!"}
