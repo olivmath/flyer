@@ -11,13 +11,12 @@ uvicorn = "^0.17.5"
 fastapi = "^0.74.1"
 peewee = "^3.14.9"
 httpx = "^0.22.0"
-base58 = "^2.1.1"
-python = "^3.9"
+python = "^3.7"
 
 [tool.poetry.dev-dependencies]
 httpx = {extras = ["cli"], version = "^0.22.0"}
-pytest-parallel = "^0.1.1"
 pytest = "7.0.0"
+requests = "^2.27.1"
 
 
 [build-system]
