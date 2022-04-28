@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "flyer"
+version = "0.1.0"
+description = ""
+authors = [
+    "Lucas Oliveira <lucas.oliveira@lunes.io>"
+]
+
+[tool.poetry.dependencies]
+uvicorn = "^0.17.5"
+fastapi = "^0.74.1"
+peewee = "^3.14.9"
+httpx = "^0.22.0"
+base58 = "^2.1.1"
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+httpx = {extras = ["cli"], version = "^0.22.0"}
+pytest-parallel = "^0.1.1"
+pytest = "7.0.0"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+up = "scripts.poetry:up"
+t = "scripts.poetry:t"
+
+[tool.pytest.ini_options]
+markers = [
+    "now: marks current dev test"
+]
