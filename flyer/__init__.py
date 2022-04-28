@@ -1,5 +1,5 @@
 """
-# Flyer Molude root
+# Flyer Molude
 """
 
 from fastapi import FastAPI
@@ -19,7 +19,7 @@ app = FastAPI(
     docs_url="/",
     openapi_url="/api/v1/openapi.json",
     description=DESCRIPTION,
-    title="Pix API",
+    title="GamEducation API",
     version="0.1.0",
     openapi_tags=[]
 )
