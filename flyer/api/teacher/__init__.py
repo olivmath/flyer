@@ -1,3 +1,7 @@
+"""
+Teacher Module
+"""
+
 from fastapi import APIRouter
 
 router = APIRouter(

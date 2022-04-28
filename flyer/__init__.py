@@ -1,7 +1,11 @@
+"""
+# Flyer Molude root
+"""
+
 from fastapi import FastAPI
 
 
-description ="""
+DESCRIPTION ="""
 ## Welcome To Flyer
 - ...
 
@@ -14,7 +18,7 @@ description ="""
 app = FastAPI(
     docs_url="/",
     openapi_url="/api/v1/openapi.json",
-    description=description,
+    description=DESCRIPTION,
     title="Pix API",
     version="0.1.0",
     openapi_tags=[]
