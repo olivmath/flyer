@@ -11,7 +11,7 @@ uvicorn = "^0.17.5"
 fastapi = "^0.74.1"
 peewee = "^3.14.9"
 httpx = "^0.22.0"
-python = "^3.6"
+python = "^3.7"
 
 [tool.poetry.dev-dependencies]
 httpx = {extras = ["cli"], version = "^0.22.0"}
